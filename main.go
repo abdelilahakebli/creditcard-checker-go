@@ -5,7 +5,7 @@ import (
 	"os"
 	"strconv"
 
-	"github.com/abdelilahakebli/creadircard-checker-go/algorithms"
+	"github.com/abdelilahakebli/creditcard-checker-go/algorithms"
 	"github.com/fatih/color"
 )
 

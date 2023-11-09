@@ -1,4 +1,4 @@
-module github.com/abdelilahakebli/creadircard-checker-go
+module github.com/abdelilahakebli/creditcard-checker-go
 
 go 1.21.3
 
