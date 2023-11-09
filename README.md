@@ -1,8 +1,4 @@
-# creadircard-checker-go
-
-Credit Card Number Validator using Luhn Algorithm.
-
-
+# Credit Card Number Validator using Luhn Algorithm implemented in GO.
 
 
 ``` bash
