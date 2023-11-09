@@ -6,6 +6,7 @@ import (
 	"strconv"
 
 	"github.com/abdelilahakebli/creadircard-checker-go/algorithms"
+	"github.com/fatih/color"
 )
 
 func main() {
@@ -21,10 +22,14 @@ func main() {
 	check := algorithms.CalculateLuhn(cc / 10)
 
 	if check != cc%10 {
-		fmt.Println("Invalid Creadit Card Number")
+		fail := color.New(color.FgBlack).Add(color.BgRed).Add(color.Bold)
+		fail.Print(" FAIL ")
+		fmt.Println(" Invalid Creadit Card Number.")
 		return
 	}
 
-	fmt.Println("Valid Creadit Card Number")
+	pass := color.New(color.FgBlack).Add(color.BgGreen).Add(color.Bold)
+	pass.Print(" PASS ")
+	fmt.Println(" Valid Creadit Card Number.")
 
 }
